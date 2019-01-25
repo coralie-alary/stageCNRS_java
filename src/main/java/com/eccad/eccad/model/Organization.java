@@ -21,52 +21,188 @@ public class Organization {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_organization")
-	private int id;
+	private int idOrganization;
 
 	// toutes les colonnes de la table
-	@Column(name = "full_name_organization")
-	private String name;
-
 	@Column(name = "adress_organization")
-	private String adress;
+	private String adressOrganization;
+
+	@Column(name = "city_organization")
+	private String cityOrganization;
+
+	@Column(name = "confirmed")
+	private boolean confirmed;
+
+	@Column(name = "fax_oganization")
+	private String faxOrganization;
+
+	@Column(name = "full_name_organization")
+	private String fullNameOrganization;
+
+	@Column(name = "latitude_organization")
+	private float latitudeOrganization;
+
+	@Column(name = "longitude_organization")
+	private float longitudeOrganization;
+
+	@Column(name = "phone_organization")
+	private String phoneOrganization;
+
+	@Column(name = "short_name_organization")
+	private String shortNameOrganization;
+
+	@Column(name = "state_organization")
+	private String stateOrganization;
+
+	@Column(name = "url_organization")
+	private String urlOrganization;
+
+	@Column(name = "zip_organization")
+	private String zipOrganization;
+
+	@Column(name = "id_coutry")
+	private int idCOuntry;
 
 	public Organization() {
 	}
 
-	public Organization(int id, String name, String adress) {
-		this.id = id;
-		this.name = name;
-		this.adress = adress;
+	public Organization(int idOrganization, String adressOrganization, String cityOrganization, boolean confirmed,
+			String faxOrganization, String fullNameOrganization, float latitudeOrganization,
+			float longitudeOrganization, String phoneOrganization, String shortNameOrganization,
+			String stateOrganization, String urlOrganization, String zipOrganization, int idCOuntry) {
+		this.idOrganization = idOrganization;
+		this.adressOrganization = adressOrganization;
+		this.cityOrganization = cityOrganization;
+		this.confirmed = confirmed;
+		this.faxOrganization = faxOrganization;
+		this.fullNameOrganization = fullNameOrganization;
+		this.latitudeOrganization = latitudeOrganization;
+		this.longitudeOrganization = longitudeOrganization;
+		this.phoneOrganization = phoneOrganization;
+		this.shortNameOrganization = shortNameOrganization;
+		this.stateOrganization = stateOrganization;
+		this.urlOrganization = urlOrganization;
+		this.zipOrganization = zipOrganization;
+		this.idCOuntry = idCOuntry;
 	}
 
-	public int getId() {
-		return id;
+	public int getIdOrganization() {
+		return idOrganization;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setIdOrganization(int idOrganization) {
+		this.idOrganization = idOrganization;
 	}
 
-	public String getName() {
-		return name;
+	public String getAdressOrganization() {
+		return adressOrganization;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setAdressOrganization(String adressOrganization) {
+		this.adressOrganization = adressOrganization;
 	}
 
-	public String getAdress() {
-		return adress;
+	public String getCityOrganization() {
+		return cityOrganization;
 	}
 
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setCityOrganization(String cityOrganization) {
+		this.cityOrganization = cityOrganization;
+	}
+
+	public boolean isConfirmed() {
+		return confirmed;
+	}
+
+	public void setConfirmed(boolean confirmed) {
+		this.confirmed = confirmed;
+	}
+
+	public String getFaxOrganization() {
+		return faxOrganization;
+	}
+
+	public void setFaxOrganization(String faxOrganization) {
+		this.faxOrganization = faxOrganization;
+	}
+
+	public String getFullNameOrganization() {
+		return fullNameOrganization;
+	}
+
+	public void setFullNameOrganization(String fullNameOrganization) {
+		this.fullNameOrganization = fullNameOrganization;
+	}
+
+	public float getLatitudeOrganization() {
+		return latitudeOrganization;
+	}
+
+	public void setLatitudeOrganization(float latitudeOrganization) {
+		this.latitudeOrganization = latitudeOrganization;
+	}
+
+	public float getLongitudeOrganization() {
+		return longitudeOrganization;
+	}
+
+	public void setLongitudeOrganization(float longitudeOrganization) {
+		this.longitudeOrganization = longitudeOrganization;
+	}
+
+	public String getPhoneOrganization() {
+		return phoneOrganization;
+	}
+
+	public void setPhoneOrganization(String phoneOrganization) {
+		this.phoneOrganization = phoneOrganization;
+	}
+
+	public String getShortNameOrganization() {
+		return shortNameOrganization;
+	}
+
+	public void setShortNameOrganization(String shortNameOrganization) {
+		this.shortNameOrganization = shortNameOrganization;
+	}
+
+	public String getStateOrganization() {
+		return stateOrganization;
+	}
+
+	public void setStateOrganization(String stateOrganization) {
+		this.stateOrganization = stateOrganization;
+	}
+
+	public String getUrlOrganization() {
+		return urlOrganization;
+	}
+
+	public void setUrlOrganization(String urlOrganization) {
+		this.urlOrganization = urlOrganization;
+	}
+
+	public String getZipOrganization() {
+		return zipOrganization;
+	}
+
+	public void setZipOrganization(String zipOrganization) {
+		this.zipOrganization = zipOrganization;
+	}
+
+	public int getIdCOuntry() {
+		return idCOuntry;
+	}
+
+	public void setIdCOuntry(int idCOuntry) {
+		this.idCOuntry = idCOuntry;
 	}
 
 	@Override
 	public String toString() {
-		return "Organization{" + "id = " + id + ", name = " + name
-				+ ", adress = " + adress + '}';
+		return "Organization{" + "organization = " + fullNameOrganization + "" + shortNameOrganization + "" + "Lat. "
+				+ latitudeOrganization + "" + "Lon. " + longitudeOrganization + "" + adressOrganization
+				+ urlOrganization;
 	}
 
 }
