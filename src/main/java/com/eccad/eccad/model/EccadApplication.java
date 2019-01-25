@@ -1,3 +1,5 @@
+//Cette classe, générée automatiquement par Spring Boot, est le point de démarrage de l'application 
+
 package com.eccad.eccad.model;
 
 import org.springframework.boot.SpringApplication;
@@ -11,4 +13,3 @@ public class EccadApplication {
 	}
 
 }
-
